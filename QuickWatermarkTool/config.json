@@ -3,14 +3,14 @@
   "MaxOutputImageHeight": 2000,
   "WatermarkFilename": "watermark.png",
   "MaxWatermarkScaleWidth": 0.2,
-  "MaxWatermarkScaleHeight": 0.2,
+  "MaxWatermarkScaleHeight": 1.0,
   "WatermarkOpacity": 1.0,
-  "WatermarkOffsetWidth": 0,
-  "WatermarkOffsetHeight": 0,
+  "WatermarkOffsetWidth": 50,
+  "WatermarkOffsetHeight": 50,
   "DefaultOutputFormat": "jpg",
   "OpenFileDialogOnStartup": false,
   "AuthorName": "",
-  "Copyright": "",
-  "WatermarkPosition": "center",
-  "OutputSuffix": "_watermarked"
+  "Copyright": "© ECNU DXPress",
+  "WatermarkPosition": "LeftBottom",
+  "OutputSuffix": "_dxpress"
 }

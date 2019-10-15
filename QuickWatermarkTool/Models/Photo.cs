@@ -54,12 +54,12 @@ namespace QuickWatermarkTool.Models
         public string ImagePath { get; set; }
 
         public string FileName { get; }
-        private string status;
+        private string _status;
 
         public string Status
         {
-            get => status;
-            set => this.RaiseAndSetIfChanged(ref status, value);
+            get => _status;
+            set => this.RaiseAndSetIfChanged(ref _status, value);
         }
 
         public int Width => originImage.Width;
@@ -99,6 +99,10 @@ namespace QuickWatermarkTool.Models
             int offsetW, offsetH;
             offsetW = Config.config.WatermarkOffsetWidth;
             offsetH = Config.config.WatermarkOffsetHeight;
+
+            offsetW = offsetW * Width / Config.config.MaxOutputImageWidth;
+
+            offsetH = offsetW; // Only for DXPRESS.
 
             switch (Config.config.WatermarkPosition)
             {

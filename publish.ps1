@@ -1,3 +1,3 @@
-dotnet publish -r win-x64 -f netcoreapp2.1 -c Release
-dotnet publish -r linux-x64 -f netcoreapp2.1 -c Release
-dotnet publish -r osx-x64 -f netcoreapp2.1 -c Release
+dotnet publish -r win-x64 -f netcoreapp3.0 -c Release /p:PublishSingleFile=true
+dotnet publish -r linux-x64 -f netcoreapp3.0 -c Release /p:PublishSingleFile=true
+dotnet publish -r osx-x64 -f netcoreapp3.0 -c Release /p:PublishSingleFile=true

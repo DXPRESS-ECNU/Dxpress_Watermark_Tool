@@ -1,6 +1,6 @@
-# Quick Watermark Tool
+# Dxpress Watermark Tool
 
-Quick Watermark Tool is a .Net Core based image watermarking tool which supports Windows, Linux and Mac OSX.
+Dxpress Watermark Tool is a .Net Core based image watermarking tool based on Quick Watermark Tool.
 
 ![Main Window](mainwindow.png)
 ![Setting Window](settings.png)
